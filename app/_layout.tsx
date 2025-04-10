@@ -32,6 +32,13 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
+        <Stack.Screen 
+          name="product/[id]" 
+          options={{ 
+            headerShown: true,
+            headerTitle: '商品详情' 
+          }} 
+        />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

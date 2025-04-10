@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "065cf38a-ec80-43a1-863f-88de68288259"
+      }
+    },
+    "owner": "yige"
   }
 }
