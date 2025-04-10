@@ -1,50 +1,56 @@
-# Welcome to your Expo app 👋
+# Shopify 店铺客户端
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+这是一个基于 Expo 和 React Native 开发的 Shopify 店铺客户端应用，支持 iOS 和 Android 平台。通过集成 Shopify Front API，您可以轻松地将自己的店铺接入移动端。
 
-## Get started
+## 功能特性
 
-1. Install dependencies
+- 支持 iOS 和 Android 双平台
+- 集成 Shopify Front API
+- 可自定义店铺接入
+- 响应式设计，适配多种屏幕尺寸
 
+## 快速开始
+
+1. 克隆本仓库到本地：
    ```bash
+   git clone https://github.com/ericfetch/shopify_react_native_client.git
+   ```
+
+2. 安装依赖：
+   ```bash
+   cd shopify_react_native_client
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. 配置 Shopify Access Token：
+   在 `/shopify/index.js` 文件中，替换 `ACCESS_TOKEN` 为您自己店铺的 Access Token：
+   ```javascript
+  storefrontAccessToken:'your access'
    ```
 
-In the output, you'll find options to open the app in a
+4. 启动项目：
+   ```bash
+   expo start
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+5. 运行项目：
+   - 扫描二维码在 Expo Go 应用中运行
+   - 或使用以下命令在模拟器中运行：
+     - iOS: `npm run ios`
+     - Android: `npm run android`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 依赖
 
-## Get a fresh project
+- Expo
+- React Native
+- Shopify Front API
+- React Navigation
+- Axios
 
-When you're ready, run:
+## 贡献
 
-```bash
-npm run reset-project
-```
+欢迎提交 Pull Request 或 Issue 来改进本项目。
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 许可证
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+MIT License
